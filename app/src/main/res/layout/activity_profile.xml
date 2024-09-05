@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalmDown">
+
+    <!-- Bar with Circular Image and Text -->
+    <LinearLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_light"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <!-- Circular Image -->
+        <ImageView
+            android:id="@+id/circular_image"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="8dp"
+            android:clickable="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pic" />
+
+        <!-- Text Layout -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <!-- Name Text -->
+            <TextView
+                android:id="@+id/name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <!-- Location Text -->
+            <TextView
+                android:id="@+id/location_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Display Data -->
+    <TextView
+        android:id="@+id/age_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bar"
+        android:layout_margin="16dp"
+        android:text="Age: 29" />
+
+    <TextView
+        android:id="@+id/gender_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/age_value"
+        android:layout_margin="16dp"
+        android:text="Gender: Male" />
+
+    <TextView
+        android:id="@+id/blood_type_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gender_value"
+        android:layout_margin="16dp"
+        android:text="Blood Type: O+" />
+
+    <TextView
+        android:id="@+id/height_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/blood_type_value"
+        android:layout_margin="16dp"
+        android:text="Height: 175 cm" />
+
+    <TextView
+        android:id="@+id/weight_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/height_value"
+        android:layout_margin="16dp"
+        android:text="Weight: 70 kg" />
+
+    <TextView
+        android:id="@+id/disabled_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weight_value"
+        android:layout_margin="16dp"
+        android:text="Disabled: No" />
+
+    <TextView
+        android:id="@+id/people_in_house_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/disabled_value"
+        android:layout_margin="16dp"
+        android:text="Number of People in House: 4" />
+
+    <!-- Logout Button -->
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:text="Logout"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_red_light"/>
+
+</RelativeLayout>

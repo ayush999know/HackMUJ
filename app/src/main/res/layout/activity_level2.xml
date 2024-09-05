@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Family/Friend Status Button -->
+    <Button
+        android:id="@+id/button_family_friend_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Family/Friend Status"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <!-- Bluetooth Button -->
+    <Button
+        android:id="@+id/button_bluetooth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bluetooth"
+        android:background="@android:color/holo_green_light"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_below="@id/button_family_friend_status" />
+
+</RelativeLayout>
